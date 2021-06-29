@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+preserveAspectRatio="xMidYMid">
+
+<defs>
+<g id = "poly" stroke = "black" >
+<polygon points=
+"193,121
+174,159
+141,186
+100,195
+59,186
+26,159
+7,121
+7,79
+26,41
+59,14
+100,5
+141,14
+174,41
+193,79"
+
+fill="none" stroke="black" stroke-width="1" >
+
+<animateTransform attributeName="transform"
+type="rotate"
+from="360 95 95"
+to="0 95 95"
+dur="5s"
+repeatCount="indefinite" />
+
+</polygon>
+</g>
+</defs>
+
+<defs>
+<g id="figura">
+<use xlink:href = "#poly"  transform = "translate(95,95)" />
+<use xlink:href = "#poly" transform = "translate(410,150)" />
+
+<rect x = "210" y = "150" width = "340" stroke="black" stroke-width="1" height = "20" transform = "rotate(10)" fill="red"/>
+<polygon points="350,250 400,400 300,400"  stroke="black" stroke-width="1" /> 
+</g>
+
+</defs>
+<use xlink:href = "#figura"   transform= "translate(0,150) scale(0.9,0.8)" fill="purple"/>
+<use xlink:href = "#figura"   transform = "translate(300,350) scale(1.2,1.2)" fill="blue"/>
+<use xlink:href = "#figura"   transform = "translate(700,100)  scale(0.6,0.6)" fill="green"/>
+</svg>
